@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: josefin sans;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  border: 1px solid black;
+  width: 100vw;
+  height: 99vh;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/images/cloud.webp); */
+  /* background-image:  */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+
+
+input[type="search"] {
+  margin-top: 14px;
+  border-radius: 9px 9px 9px 9px;
+  width: 500px;
+  padding: 6px;
+  border: 1px solid grey;
+}
+
+h3 {
+  font-family: josefin sans;
+  color: white;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+  font-size: 39px;
+  font-family: serif;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  margin-left: 20px;
+  height: 24px;
+  width: 63px;
+  margin-top: 17px;
+}
+
+button.submitbutton {
+  padding: 0px;
+}
+
+@media screen and (max-width:600px) {
+
+  .info,
+  .searchbox {
+    flex-direction: column;
+  }
+
+  button.submitbutton {
+    padding: 0px;
+    margin-left: 42%;
+  }
+}
